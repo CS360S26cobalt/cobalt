@@ -1,7 +1,14 @@
 package com.example.cobalt;
 
-public class Circle extends Shape{
-    public Circle(int x, int y) {
+public class Circle extends Shape {
+    private double radius;
+
+    public Circle(int x, int y, double radius) {
         super(x, y);
+        this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
     }
 }
